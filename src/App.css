@@ -13,6 +13,14 @@
   }
 }
 
+.ui.wide.left.sidebar, .ui.wide.right.sidebar{
+  width: 280px;
+}
+
+.ui.visible.wide.left.sidebar~.fixed, .ui.visible.wide.left.sidebar~.pusher {
+  transform: translate3d(280px,0,0);
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

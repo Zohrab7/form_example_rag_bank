@@ -1,0 +1,95 @@
+.rga {
+  &__sidebar {
+    box-shadow: unset !important;
+    margin-top: 0 !important;
+    border: none !important;
+    height: calc(100vh - 85px) !important;
+
+    .ui.segment {
+      border: none !important;
+      box-shadow: none !important;
+      background: white !important;
+    }
+    .ui.sidebar{
+      background: #ffffff!important;
+    }
+
+    .ui.accordion {
+      width: 100% !important;
+      border: none !important;
+      border-radius: unset !important;
+      box-shadow: none !important;
+
+      .item {
+        padding: 0 !important;
+
+        .content.active{
+          padding-top: 25px!important;
+        }
+
+        .title {
+          background: rgba(0,0,0,.05);
+          font-weight: bold;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          text-align: left;
+          padding-left: 15px;
+          border-bottom: 1px solid rgba(34, 36, 38, 0.15) !important;
+
+          .dropdown {
+            display: none;
+          }
+        }
+
+        .content {
+
+          .button {
+            background: #2780e3;
+            color: white;
+            width: 220px;
+            text-align: left;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    padding: 30px 40px 20px;
+    width: 85%;
+
+    .fields {
+      margin: 10px 20px 25px !important;
+
+      button {
+        border-radius: unset!important;
+        width: 120px !important;
+
+        &:first-child {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    &-fields {
+
+      &-true {
+        label, input, textarea {
+          color: grey !important;
+        }
+      }
+
+      &-true, &-false {
+        height: calc(100vh - 180px);
+        width: calc(100vw - 375px);
+        padding: 10px 25px 20px 20px;
+        overflow: auto;
+        .react-datepicker-wrapper{
+          width: 100%!important;
+        }
+      }
+    }
+  }
+}
