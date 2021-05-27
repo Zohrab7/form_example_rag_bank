@@ -1,0 +1,37 @@
+.rga{
+  &__header{
+    display: flex;
+    padding: 18px 12px!important;
+    box-sizing: border-box;
+    zoom: 1;
+    margin-bottom: 0!important;
+    border-bottom: 1px solid rgba(34,36,38,.15)!important;
+    .item{
+      padding: 10px 0 10px 0!important;
+      margin: 0 15px 0 15px!important;
+      transition: all 500ms ease-in;
+      &:hover{
+        transition: all 500ms ease-in;
+        background: unset!important;
+        border-radius: unset!important;
+        margin-top: 2px!important;
+        border-bottom: 2px solid #66bc66 !important;
+      }
+    }
+    .active.item{
+      background: unset!important;
+      border-radius: unset!important;
+      margin-top: 2px!important;
+      transition: all 500ms ease-in;
+      border-bottom: 2px solid green!important;
+    }
+    &-logo{
+      width: 215px;
+      height: 44px;
+    }
+    &-navbar{
+      margin-top: 0!important;
+      margin-left: 30px!important;
+    }
+  }
+}
